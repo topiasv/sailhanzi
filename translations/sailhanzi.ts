@@ -51,11 +51,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>From</source>
+        <source>From          ​​</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>To</source>
+        <source>To          </source>
         <translation type="unfinished"></translation>
     </message>
 </context>
