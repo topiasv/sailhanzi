@@ -40,7 +40,8 @@ Page {
                 ComboBox {
                     id: from
                     width: (parent.width - swap.width)* 0.5
-                    label: "From"
+                    // A stupid hack to force value on second row
+                    label: qsTr("From          ​​")
                     menu: ContextMenu {
                         MenuItem { text: qsTr("Simplified") }
                         MenuItem { text: qsTr("Traditional") }
@@ -52,7 +53,10 @@ Page {
                 IconButton {
                     id: swap
                     width: Theme.itemSizeSmall
-                    icon.source: "image://theme/icon-s-sync?" + (pressed
+                    // A hack that puts the button in the vertical center
+                    // even when either combobox is open
+                    y: Math.min(from.height, to.height) / 2 - height / 2
+                    icon.source: "image://theme/icon-m-sync?" + (pressed
                         ? Theme.highlightColor
                         : Theme.primaryColor)
                     onClicked: swapCharacters()
@@ -62,7 +66,8 @@ Page {
                 ComboBox {
                     id: to
                     width: (parent.width - swap.width)* 0.5
-                    label: "To"
+                    // A stupid hack to force value on second row
+                    label: qsTr("To          ")
                     currentIndex: 2
                     menu: ContextMenu {
                         MenuItem { text: qsTr("Simplified") }
