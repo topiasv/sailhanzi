@@ -52,7 +52,7 @@
     </message>
     <message>
         <source>Enter Chinese text to convert...</source>
-        <translation>輸入漢語文本以轉^……</translation>
+        <translation>輸入漢語文本以轉換……</translation>
     </message>
     <message>
         <source>Source text</source>
