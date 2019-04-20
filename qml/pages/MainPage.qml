@@ -4,7 +4,7 @@ import net.toxip.openccqml 1.0
 
 Page {
     id: page
-    property string cntext: "简单"
+    property string cntext: ""
     property bool isIdiomsOn: idiomSwitch.enabled ? idiomSwitch.checked : false
     property bool idiomsEnabled: from.currentIndex === 0 && to.currentIndex === 2
                               || from.currentIndex === 2 && to.currentIndex === 0
@@ -86,24 +86,54 @@ Page {
             }
 
             TextArea {
-                id: convert
+                id: sourceText
                 width: parent.width
-                text: "简单"
-                label: qsTr("text to convert")
+                text: ""
+                placeholderText: qsTr("Enter Chinese text to convert...")
+                label: qsTr("Source text")
                 color: highlighted ? Theme.highlightColor : Theme.primaryColor
             }
 
-            Button {
-                id: button
+            Row {
                 anchors.horizontalCenter: parent.horizontalCenter
-                text: qsTr("Convert")
-                onPressed: convertText(constructMode(from.currentIndex, to.currentIndex, isIdiomsOn), convert.text)
+
+                IconButton {
+                    id: swapTextButton
+                    icon.source: "image://theme/icon-m-up?" + (pressed
+                        ? Theme.highlightColor
+                        : Theme.primaryColor)
+                    enabled: resultText.text !== ""
+                    onClicked: {
+                        sourceText.text = resultText.text
+                    }
+                }
+                Button {
+                    id: convertButton
+                    enabled: sourceText.text !== ""
+                    text: qsTr("Convert")
+                    onClicked: convertText(constructMode(from.currentIndex, to.currentIndex, isIdiomsOn), sourceText.text)
+                }
+
+                IconButton {
+                    id: clearButton
+                    icon.source: "image://theme/icon-m-clear?" + (pressed
+                        ? Theme.highlightColor
+                        : Theme.primaryColor)
+                    enabled: sourceText.text !== ""
+                    onClicked: {
+                        sourceText.text = ""
+                        resultText.text = ""
+                        sourceText.forceActiveFocus()
+                    }
+                }
             }
 
             TextArea {
+                id: resultText
                 width: parent.width
                 text: cntext
-                label: qsTr("result")
+                placeholderText: qsTr("Conversion results")
+                label: qsTr("Conversion results")
                 color: highlighted ? Theme.highlightColor : Theme.primaryColor
                 font.pixelSize: Theme.fontSizeMedium
             }
@@ -119,7 +149,7 @@ Page {
     function constructMode(from, to, idiomsOn) {
         var modeArr = ["s","t","tw","hk"]
         var modeString = modeArr[from] + "2" + modeArr[to]
-        if (idiomsOn) {
+        if (isIdiomsOn) {
             modeString += "p"
         }
         return modeString
