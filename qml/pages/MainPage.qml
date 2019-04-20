@@ -41,12 +41,12 @@ Page {
                     id: from
                     width: (parent.width - swap.width)* 0.5
                     // A stupid hack to force value on second row
-                    label: qsTr("From          ​​")
+                    label: qsTr("From       ​​")
                     menu: ContextMenu {
                         MenuItem { text: qsTr("Simplified") }
                         MenuItem { text: qsTr("Traditional") }
-                        MenuItem { text: qsTr("Taiwanese") }
-                        MenuItem { text: qsTr("Hong Kong") }
+                        MenuItem { text: qsTr("Taiwan Traditional") }
+                        MenuItem { text: qsTr("Hong Kong Traditional") }
                     }
                 }
 
@@ -67,21 +67,21 @@ Page {
                     id: to
                     width: (parent.width - swap.width)* 0.5
                     // A stupid hack to force value on second row
-                    label: qsTr("To          ")
+                    label: qsTr("To         ")
                     currentIndex: 2
                     menu: ContextMenu {
                         MenuItem { text: qsTr("Simplified") }
                         MenuItem { text: qsTr("Traditional") }
-                        MenuItem { text: qsTr("Taiwanese") }
-                        MenuItem { text: qsTr("Hong Kong") }
+                        MenuItem { text: qsTr("Taiwan Traditional") }
+                        MenuItem { text: qsTr("Hong Kong Traditional") }
                     }
                 }
             }
 
             TextSwitch {
                 id: idiomSwitch
-                text: qsTr("Translate idioms")
-                description: qsTr("Enables translation of Mainland Chinese idioms into Taiwanese and vice versa.")
+                text: qsTr("Translate regional vocabulary")
+                description: qsTr("Enables translation of commonly used vocabulary between Mainland Chinese and Taiwanese.")
                 enabled: idiomsEnabled
             }
 

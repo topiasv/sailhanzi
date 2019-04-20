@@ -27,23 +27,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Taiwanese</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Hong Kong</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Translate idioms</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Enables translation of Mainland Chinese idioms into Taiwanese and vice versa.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>From          ​​</source>
+        <source>From          </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -60,6 +44,22 @@
     </message>
     <message>
         <source>Conversion results</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Taiwan Traditional</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Hong Kong Traditional</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Translate regional vocabulary</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enables translation of commonly used vocabulary between Mainland Chinese and Taiwanese.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
