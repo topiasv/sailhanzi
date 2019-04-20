@@ -9,12 +9,12 @@ Name:       sailhanzi
 # << macros
 
 Summary:    SailHanzi - Chinese Character Converter
-Version:    0.1
+Version:    1.0.0
 Release:    1
-Group:      Qt/Qt
-License:    LICENSE
+Group:      Applications/Productivity
+License:    LGPL2.1
 BuildArch:  noarch
-URL:        http://example.org/
+URL:        http://github.com/topiasv/sailhanzi
 Source0:    %{name}-%{version}.tar.bz2
 Source100:  sailhanzi.yaml
 Requires:   sailfishsilica-qt5 >= 0.10.9
@@ -28,7 +28,7 @@ BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  desktop-file-utils
 
 %description
-Short description of my Sailfish OS Application
+A simple Chinese character converter app for Sailfish OS utilizing the OpenCC Chinese character converter library.
 
 
 %prep

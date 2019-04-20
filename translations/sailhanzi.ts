@@ -43,19 +43,23 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>text to convert</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>result</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>From          ​​</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>To          </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enter Chinese text to convert...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Source text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Conversion results</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

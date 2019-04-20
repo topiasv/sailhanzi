@@ -1,19 +1,19 @@
 Name: sailhanzi
 Summary: SailHanzi - Chinese Character Converter
-Version: 0.1
+Version: 1.0.0
 Release: 1
 # The contents of the Group field should be one of the groups listed here:
 # https://github.com/mer-tools/spectacle/blob/master/data/GROUPS
-Group: Qt/Qt
-URL: http://example.org/
+Group: Applications/Productivity
+URL: http://github.com/topiasv/sailhanzi
 BuildArch: noarch
-License: LICENSE
+License: LGPL2.1
 # This must be generated before uploading a package to a remote build service.
 # Usually this line does not need to be modified.
 Sources:
 - '%{name}-%{version}.tar.bz2'
 Description: |
-  Short description of my Sailfish OS Application
+  A simple Chinese character converter app for Sailfish OS utilizing the OpenCC Chinese character converter library.
 Configure: none
 Builder: qmake5
 
