@@ -20,19 +20,19 @@
     </message>
     <message>
         <source>Simplified</source>
-        <translation>簡體漢字</translation>
+        <translation>簡體字</translation>
     </message>
     <message>
         <source>Traditional</source>
-        <translation>傳統漢字</translation>
+        <translation>繁體字</translation>
     </message>
     <message>
         <source>Taiwanese</source>
-        <translation>中國台灣</translation>
+        <translation>台灣正體</translation>
     </message>
     <message>
         <source>Hong Kong</source>
-        <translation>中國香港</translation>
+        <translation>香港繁體</translation>
     </message>
     <message>
         <source>Translate idioms</source>
@@ -48,11 +48,11 @@
     </message>
     <message>
         <source>To          </source>
-        <translation>到</translation>
+        <translation>到          ​​</translation>
     </message>
     <message>
         <source>Enter Chinese text to convert...</source>
-        <translation>輸入漢語文本以轉換……</translation>
+        <translation>輸入中文文本以轉換…</translation>
     </message>
     <message>
         <source>Source text</source>
