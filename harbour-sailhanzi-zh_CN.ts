@@ -28,11 +28,11 @@
     </message>
     <message>
         <source>From          </source>
-        <translation>从</translation>
+        <translation>从      </translation>
     </message>
     <message>
         <source>To          </source>
-        <translation>到</translation>
+        <translation>到      </translation>
     </message>
     <message>
         <source>Enter Chinese text to convert...</source>
